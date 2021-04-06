@@ -3,8 +3,7 @@ import json
 
 #urls
 access_token="<access token that you get in previous step>"
-refresh_token = "X13RG0nnnrycFYf0sDT8mCFih724VyjZ"
-client_id = "B6zDgZi9YCyIKufRXGt1Q8RD97jsdCQNRWYFf9xK"
+client_id = "<your clien_id>"
 printer_url="https://printapi.ezeep.com/sfapi/GetPrinter/"
 prepare_printer = "https://printapi.ezeep.com/sfapi/PrepareUpload/"
 configuration_url = "https://printapi.ezeep.com/sfapi/GetConfiguration/"

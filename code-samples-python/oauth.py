@@ -49,7 +49,3 @@ refresh_token_response = requests.post(token_url, data=data, auth=(client_id, cl
 print("refresh response")
 print(refresh_token_response.status_code)
 print('body: ' + refresh_token_response.text)
-
-
-
-
