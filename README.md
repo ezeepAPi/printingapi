@@ -104,6 +104,7 @@ POST 'https://account.ezeep.com/oauth/access_token'
 |  Data       | grant_type | authorization_code |
 |  Data       |scope | printing |
 |   Data      |code | {{authorization_code}} |
+| Data       | redirect_uri | registered redirect_uri |
 
 <br>
 Example Request<br>
@@ -115,6 +116,7 @@ curl  -X POST 'https://account.ezeep.com/oauth/access_token/' \
            'grant_type':'authorization_code',
            'scope' :'printing',
            'code':'<authorization_code>'
+           'redirect_uri' : '<registered redirect_uri>'
          }" 
 ```
 
@@ -551,3 +553,11 @@ Example response:
 | 0                 | INFO: print job successfully finished
 | 3011              | ERROR: something went wrong - restart print job
 | 2                 | ERROR: invalid print job identifier
+
+These codes are **expected** and should be handled adequately.
+
+## Error codes
+
+Stuck with an error code? We are using Microsoft error codes that are represented by an integer. Find a comprehensive list here: https://docs.microsoft.com/en-us/windows/win32/debug/system-error-codes
+
+
